@@ -2,8 +2,32 @@
     "releaseVersion": "4.5.0",
     "packages": [
         {
-            "name": "minimal",
+            "name": "ca1e",
             "active": true,
+            "modules": [
+                "atmosphere",
+                "hekate",
+                "sigpatches",
+                "deepseatoolbox",
+                "ldn_mitm",
+                "nxovlloader",
+                "teslamenu",
+                "tegraexplorer",
+                "Lockpick_RCM",
+                "emuiibo",
+                "sys-botbase",
+                "jksv",
+                "tinwoo",
+                "Awoo-Installer",
+                "nxdumptool",
+                "dbi",
+                "CaptureSight",
+                "SysDVR"
+            ]
+        },
+        {
+            "name": "minimal",
+            "active": false,
             "modules": [
                 "atmosphere",
                 "hekate",
@@ -13,7 +37,7 @@
         },
         {
             "name": "normal",
-            "active": true,
+            "active": false,
             "modules": [
                 "atmosphere",
                 "hekate",
@@ -36,7 +60,7 @@
         },
         {
             "name": "advanced",
-            "active": true,
+            "active": false,
             "modules": [
                 "atmosphere",
                 "hekate",
@@ -473,6 +497,207 @@
                 {
                     "name": "delete",
                     "arguments": ["atmosphere/contents/010000000000bd00/flags/boot2.flag"]
+                }
+            ]
+        },
+        "Amiigo": {
+            "repo": "CompSciOrBust/Amiigo",
+            "regex": [
+                "Amiigo.nro"
+            ],
+            "steps": [
+                {
+                    "name": "create_dir",
+                    "arguments": [
+                        "switch/Amiigo"
+                    ]
+                },
+                {
+                    "name": "move",
+                    "arguments": [
+                        "Amiigo.nro",
+                        "switch/Amiigo/Amiigo.nro"
+                    ]
+                }
+            ]
+        },
+        "Awoo-Installer": {
+            "repo": "Huntereb/Awoo-Installer",
+            "regex": [
+                "Awoo-Installer.zip"
+            ],
+            "steps": [
+                {
+                    "name": "extract",
+                    "arguments": [
+                        ".*Awoo-Installer.*\\.zip"
+                    ]
+                }
+            ]
+        },
+        "CaptureSight": {
+            "repo": "zaksabeast/CaptureSight",
+            "regex": [
+                "capturesight.ovl"
+            ],
+            "steps": [
+                {
+                    "name": "create_dir",
+                    "arguments": [
+                        "switch/.overlays"
+                    ]
+                },
+                {
+                    "name": "move",
+                    "arguments": [
+                        "capturesight.ovl",
+                        "switch/.overlays/CaptureSight-Overlay.ovl"
+                    ]
+                }
+            ]
+        },
+        "dbi": {
+            "repo": "rashevskyv/dbi",
+            "regex": [
+                "dbi.config",
+                "DBI.nro"
+            ],
+            "steps": [
+                {
+                    "name": "create_dir",
+                    "arguments": "switch/DBI"
+                },
+                {
+                    "name": "move",
+                    "arguments": [
+                        "dbi.config",
+                        "switch/DBI/dbi.config"
+                    ]
+                },
+                {
+                    "name": "move",
+                    "arguments": [
+                        "DBI.nro",
+                        "switch/DBI/DBI.nro"
+                    ]
+                }
+            ]
+        },
+        "sigpatches": {
+            "repo": "ITotalJustice/patches",
+            "regex": [
+                ".*hekate.*\\.zip"
+            ],
+            "steps": [
+                {
+                    "name": "extract",
+                    "arguments": [
+                        ".*hekate.*\\.zip"
+                    ]
+                }
+            ]
+        },
+        "sys-botbase": {
+            "repo": "olliz0r/sys-botbase",
+            "regex": [
+                ".*sys-botbase-.*.zip"
+            ],
+            "steps": [
+                {
+                    "name": "extract",
+                    "arguments": [".*sys-botbase-.*.zip"]
+                },
+                {
+                    "name": "delete",
+                    "arguments": ["atmosphere/contents/430000000000000B/flags/boot2.flag"]
+                }
+            ]
+        },
+        "usb-botbase": {
+            "repo":"fishguy6564/USB-Botbase",
+            "regex":["usb-botbase.zip"],
+            "steps":[
+                {
+                    "name": "extract",
+                    "arguments": ["usb-botbase.zip"]
+                },
+                {
+                    "name": "delete",
+                    "arguments": ["atmosphere/contents/430000000000000B/flags/boot2.flag"]
+                }
+            ]
+        },
+        "SysDVR": {
+            "repo":"exelix11/SysDVR",
+            "regex":["SysDVR.zip"],
+            "steps":[
+                {
+                    "name": "extract",
+                    "arguments": ["SysDVR.zip"]
+                },
+                {
+                    "name": "delete",
+                    "arguments": ["atmosphere/contents/00FF0000A53BB665/flags/boot2.flag"]
+                }
+            ]
+        },
+        "Lockpick_RCM": {
+            "repo":"shchmue/Lockpick_RCM",
+            "regex":[".*\\.bin"],
+            "steps":[
+                {
+                    "name": "create_dir",
+                    "arguments": ["bootloader/payloads"]
+                },
+                {
+                    "name": "move",
+                    "arguments": ["Lockpick_RCM.bin","bootloader/payloads/Lockpick_RCM.bin"]
+                }
+            ]
+        },
+        "nxdumptool": {
+            "repo":"DarkMatterCore/nxdumptool",
+            "regex":[".*nxdumptool.*\\.nro"],
+            "steps":[
+                {
+                    "name": "create_dir",
+                    "arguments": ["switch/nxdumptool"]
+                },
+                {
+                    "action": "move",
+                    "arguments": ["nxdumptool.nro","switch/nxdumptool/nxdumptool.nro"]
+                }
+            ]
+        },
+        "linkalho":{
+            "repo":"rdmrocha/linkalho",
+            "regex":[".*linkalho.*\\.zip"],
+            "steps":[
+                {
+                    "name": "extract",
+                    "arguments": [".*linkalho.*\\.zip"]
+                },
+                {
+                    "name": "create_dir",
+                    "arguments": ["switch/linkalho"]
+                },
+                {
+                    "name": "move",
+                    "arguments": ["linkalho.nro","switch/linkalho/linkalho.nro"]
+                }
+            ]
+        },
+        "quickntp":{
+            "repo":"nedex/QuickNTP",
+            "regex":[".*QuickNTP.*\\.ovl"],
+            "steps":[
+                {
+                    "name": "create_dir",
+                    "arguments": ["switch/.overlays"]
+                },
+                {
+                    "name": "move",
+                    "arguments": ["QuickNTP.ovl","switch/.overlays/QuickNTP.ovl"]
                 }
             ]
         }
