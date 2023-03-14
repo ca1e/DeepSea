@@ -14,7 +14,7 @@
             "modules": [
                 "atmosphere", "hekate", "sigpatches",
                 "TegraExplorer", "NX-Shell", "Lockpick_RCM",
-                "nyx_chs", "emuiibo", "edizon", "dbi",
+                "nyx_chs", "sys-botbase", "emuiibo", "edizon", "dbi",
                 "nx-ovlloader", "Tesla-Menu", "ovl-sysmodules", "Status-Monitor-Overlay",
                 "jksv", "ftpd"
             ]
