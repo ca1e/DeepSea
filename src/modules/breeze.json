@@ -15,6 +15,10 @@
             "source": "config/"
         },
         {
+            "action": "delete",
+            "source": "switch/reboot_to_hekate.nro"
+        },
+        {
             "action": "createDir",
             "source": "atmosphere/contents/054e4f4558454000_Noexes"
         },
