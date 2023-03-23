@@ -1,10 +1,26 @@
 {
     "repo":"tomvita/Breeze-Beta",
-    "assetRegex":["Breeze.zip"],
+    "assetRegex":[".*Breeze.*\\.zip"],
     "customSteps":[
         {
             "action": "extract",
             "source": ".*Breeze.*\\.zip"
+        },
+        {
+            "action": "delete",
+            "source": "atmosphere/contents/420000000000000F/"
+        },
+        {
+            "action": "delete",
+            "source": "config/"
+        },
+        {
+            "action": "createDir",
+            "source": "atmosphere/contents/054e4f4558454000_Noexes"
+        },
+        {
+            "action": "createDir",
+            "source": "atmosphere/contents/010000000000000D_dmnt"
         }
     ]
 }
