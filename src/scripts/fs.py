@@ -97,15 +97,11 @@ class FS():
                 self.delete(modulename, assetPath)
                 break
     
-    def replaceText(self, modulename, source, target, replacement, regex=False):
+    def replaceText(self, modulename, source, target, replacement):
         path = Path(Path.joinpath(self.workdir, modulename, source))
         fin = open(path, "rt")
         data = fin.read()
-        print(regex)
-        if regex == False:
-            data = data.replace(target, replacement)
-        else:
-            data = re.sub(target, replacement, data, flags=re.MULTILINE)
+        data = re.sub(target, replacement, data, flags=re.MULTILINE)
         fin.close()
         fin = open(path, "wt")
         fin.write(data)
