@@ -61,7 +61,6 @@ class FS():
                         os.remove(dfile)
                         
     def copy(self, modulename, source, dest, regex=False):
-
         if regex == False:
             spath = Path(Path.joinpath(self.workdir, modulename, source))
             dpath = Path(Path.joinpath(self.workdir, modulename, dest))
@@ -98,11 +97,14 @@ class FS():
                 self.delete(modulename, assetPath)
                 break
     
-    def replaceText(self, modulename, source, target, replacement):
+    def replaceText(self, modulename, source, target, replacement, regex=False):
         path = Path(Path.joinpath(self.workdir, modulename, source))
         fin = open(path, "rt")
         data = fin.read()
-        data = data.replace(target, replacement)
+        if regex == False:
+            data = data.replace(target, replacement)
+        else:
+            data = re.sub(target, replacement, data)
         fin.close()
         fin = open(path, "wt")
         fin.write(data)
