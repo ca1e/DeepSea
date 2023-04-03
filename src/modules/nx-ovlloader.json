@@ -1,8 +1,10 @@
 {
-    "bak":"WerWolv/nx-ovlloader",
-    "repo":"qhq/SwitchApp",
-    "assetRegex":[".*nx-ovlloader.*\\.zip"],
-    "customSteps":[
+    "bak": "WerWolv/nx-ovlloader",
+    "repo": "qhq/SwitchApp",
+    "assetRegex": [
+        ".*nx-ovlloader.*\\.zip"
+    ],
+    "customSteps": [
         {
             "action": "extract",
             "source": ".*nx-ovlloader.*\\.zip"
@@ -15,8 +17,8 @@
             "action": "replaceText",
             "source": "config/tesla/config.ini",
             "target": "key_combo=.*?$",
-            "replacement":"key_combo=L+DDOWN+PLUS",
-            "regex":true
+            "replacement": "key_combo=L+DDOWN+PLUS",
+            "regex": true
         }
     ]
 }

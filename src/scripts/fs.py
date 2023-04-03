@@ -101,6 +101,7 @@ class FS():
         path = Path(Path.joinpath(self.workdir, modulename, source))
         fin = open(path, "rt")
         data = fin.read()
+        print(regex)
         if regex == False:
             data = data.replace(target, replacement)
         else:
