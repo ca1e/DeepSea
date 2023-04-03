@@ -105,7 +105,7 @@ class FS():
         if regex == False:
             data = data.replace(target, replacement)
         else:
-            data = re.sub(target, replacement, data)
+            data = re.sub(target, replacement, data, flags=re.MULTILINE)
         fin.close()
         fin = open(path, "wt")
         fin.write(data)
