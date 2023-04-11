@@ -16,7 +16,7 @@
                 "TegraExplorer", "NX-Shell", "Lockpick_RCM",
                 "nyx_chs", "sys-botbase", "emuiibo", "edizon", "dbi",
                 "nx-ovlloader", "Tesla-Menu", "ovl-sysmodules", "Status-Monitor-Overlay",
-                "jksv", "ftpd", "breeze"
+                "jksv", "ftpd", "breeze", "Zing"
             ]
         },
         "test":{
