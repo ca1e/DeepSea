@@ -1,0 +1,15 @@
+{
+    "repo":"nadrino/SimpleModManager",
+    "assetRegex":["SimpleModManager.nro"],
+    "customSteps":[
+        {
+            "action": "createDir",
+            "source": "switch/SimpleModManager"
+        },
+        {
+            "action": "move",
+            "source": "SimpleModManager.nro",
+            "destination": "switch/SimpleModManager/SimpleModManager.nro"
+        }
+    ]
+}
