@@ -17,7 +17,7 @@
                 "nyx_chs", "sys-botbase", "emuiibo", "edizon", "dbi",
                 "nx-ovlloader", "Tesla-Menu", "ovl-sysmodules", "Status-Monitor-Overlay",
                 "jksv", "breeze", "Zing",
-                "SimpleModManager"
+                "SimpleModManager","deepseaToolbox"
             ]
         },
         "test":{
