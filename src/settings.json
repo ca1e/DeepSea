@@ -13,7 +13,7 @@
             "active": true,
             "modules": [
                 "atmosphere", "hekate", "sigpatches",
-                "TegraExplorer", "NX-Shell", "Lockpick_RCM",
+                "TegraExplorer", "NX-Shell", 
                 "nyx_chs", "sys-botbase", "emuiibo", "edizon", "dbi",
                 "nx-ovlloader", "Tesla-Menu", "ovl-sysmodules", "Status-Monitor-Overlay",
                 "jksv", "breeze", "Zing",
