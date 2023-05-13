@@ -1,5 +1,6 @@
 {
-    "repo":"shchmue/Lockpick_RCM",
+    "bak":"shchmue/Lockpick_RCM",
+    "repo":"iczero/Lockpick_RCM",
     "assetRegex":[".*\\.bin"],
     "customSteps":[
         {
