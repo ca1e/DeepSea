@@ -4,7 +4,7 @@
     "assetRegex":["dbi.config", "DBI.nro"],
     "customSteps":[
         {
-	        "action": "createDir",
+            "action": "createDir",
             "source": "switch/DBI"
         },
         {
