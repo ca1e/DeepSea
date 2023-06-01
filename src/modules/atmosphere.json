@@ -1,6 +1,6 @@
 {
     "repo":"Atmosphere-NX/Atmosphere",
-    "assetRegex":[".*atmosphere.*\\.zip","fusee.bin"],
+    "assetRegex":["fusee.bin",".*atmosphere.*\\.zip"],
     "customSteps":[
         {
             "action": "extract",
