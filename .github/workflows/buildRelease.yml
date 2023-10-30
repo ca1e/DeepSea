@@ -36,7 +36,7 @@ jobs:
     - name: 安装 Python
       uses: actions/setup-python@v1
       with:
-        python-version: '3.11'
+        python-version: '3.x'
         architecture: 'x64'
 
     - name: 安装依赖
