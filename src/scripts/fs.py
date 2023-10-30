@@ -1,4 +1,3 @@
-from distutils.dir_util import copy_tree
 from pathlib import Path
 import shutil
 import uuid
@@ -66,7 +65,7 @@ class FS():
             dpath = Path(Path.joinpath(self.workdir, modulename, dest))
             if spath.is_dir():
                 print(dpath.is_dir())
-                copy_tree(str(spath), str(dpath))
+                shutil.copy_tree(str(spath), str(dpath))
             else:
                 shutil.copyfile(str(spath), str(dpath))
         else:
