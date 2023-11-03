@@ -4,3 +4,4 @@
 - [hekate_ctcaer](https://github.com/CTCaer/hekate)
 - [Sigpatches](https://github.com/fraxalotl/SwitchScript)
 - [Sigpatches](https://jits.cc/patches)
+- [EristaEmuNAND](https://rentry.org/EristaEmuNAND)
