@@ -1,7 +1,7 @@
 {
     "repo":"rashevskyv/dbi",
     "bak":"qhq/SwitchApp",
-    "assetRegex":["dbi.config", "DBI.nro"],
+    "assetRegex":["dbi.config", "DBI_zhcn.nro"],
     "customSteps":[
         {
             "action": "createDir",
@@ -14,7 +14,7 @@
         },
         {
             "action": "move",
-            "source": "DBI.nro",
+            "source": "DBI_zhcn.nro",
             "destination": "switch/DBI/DBI.nro"
         }
     ]
