@@ -3,5 +3,5 @@
 - [atmosphere](https://github.com/Atmosphere-NX/Atmosphere)
 - [hekate_ctcaer](https://github.com/CTCaer/hekate)
 - [Sigpatches](https://github.com/fraxalotl/SwitchScript)
-- [Sigpatches](https://jits.cc/patches)
+- [Sigpatches](https://sigmapatches.coomer.party/)
 - [EristaEmuNAND](https://rentry.org/EristaEmuNAND)
